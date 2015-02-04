@@ -28,7 +28,8 @@ Inspired by: [https://github.com/mac2000/slim-json-rest-service-example/blob/mas
             SetEnv SLIM_MODE development
     </Directory>
 
-- `SetEnv SLIM_MODE`Change the `development` by `production` on prod or by `sandbox` on a local machine. 
+- `SetEnv SLIM_MODE`Change the `development` by `production` on prod or by `sandbox` on a local machine.
+- Run `composer install` in the folder to install dependencies, like Slim.
 
 
 ### Routes
@@ -39,9 +40,17 @@ To create a valid route, you only have to create a Class for it.
 
     https://myapp.com/api/v1/users
 
-2) Then, simply create a class named `Users` in app/API/v1/lib
+2) Then, simply create a class named `Users` in `app/API/v1/lib`
+
 3) You also can copy and use the class `Example`.
+
 4) That's all, the route is now available in GET, POST, PATCH or DELETE method.
+
+
+## Todo
+
+- Add common method for authentication (using HTTP headers)
+- Make it as a dependency loadable by Composer.
 
 
 ## Changelog

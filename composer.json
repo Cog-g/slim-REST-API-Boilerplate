@@ -1,0 +1,25 @@
+{
+  "name": "Cog-g/slim-restapi-boilerplate",
+  "description": "Simple RESTful API using Slim Framework",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Constantin Guay",
+      "email": "const.g@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "~5.3",
+    "slim/slim": "~2",
+    "slim/middleware": "*",
+    "slim/extras": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.6.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "API\\": "app/API"
+    }
+  }
+}

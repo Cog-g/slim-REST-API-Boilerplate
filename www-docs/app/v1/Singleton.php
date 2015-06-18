@@ -1,15 +1,9 @@
 <?php
-/**
- * Class Singleton
- * @package API\v1
- * @author Constantin Guay <cguay@netmediaeurope.com>
- */
-
-namespace API\v1\lib;
+namespace API\v1;
 
 abstract class Singleton
 {
-    protected static $instances = array();
+    protected static $instances = [];
 
 
     protected function __construct() { }
@@ -20,7 +14,10 @@ abstract class Singleton
 
     private function __wakeup() { }
 
-    /** @return static */
+
+    /**
+     * @return static
+     */
     public static function getInstance()
     {
         /** @var $instances static */
